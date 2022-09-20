@@ -24,6 +24,7 @@ const ARTIFICIAL_DELAY_MS = 2000
 let useSeededRNG = true
 
 let rng = seedrandom()
+console.log('****** banana')
 
 if (useSeededRNG) {
   let randomSeedString = localStorage.getItem('randomTimestampSeed')
