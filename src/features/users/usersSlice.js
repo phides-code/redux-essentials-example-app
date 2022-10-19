@@ -24,3 +24,10 @@ const usersSlice = createSlice({
 });
 
 export default usersSlice.reducer;
+
+export const selectAllUsers = (state) => state.users;
+
+export const selectUserById = (state, userId) =>
+    state.users.find((user) => user.id === userId);
+
+// We don't yet have a selectAllUsers selector, so we'll need to add that to usersSlice.js along with a selectUserById selector:
